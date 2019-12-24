@@ -1,7 +1,8 @@
 #include <ruby.h>
 
 VALUE return_ll2num() {
-    long long i = 123LL;
+    //long long i = 123LL;
+    float i = 1.5;
     return LL2NUM(i);
 }
 
