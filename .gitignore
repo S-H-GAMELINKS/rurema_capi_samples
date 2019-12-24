@@ -1,1 +1,3 @@
 Makefile
+test.so
+test.o
