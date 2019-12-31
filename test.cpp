@@ -12,6 +12,9 @@ VALUE return_dup_object(VALUE arg) {
 
 extern "C" {
     void Init_test() {
+
+        VALUE rb_mHoge = rb_define_module("Hoge");
+
         rb_define_global_function("func", RUBY_METHOD_FUNC(return_ll2num), 0);
         rb_define_global_function("dup_obj", RUBY_METHOD_FUNC(return_dup_object), 1);
     }
